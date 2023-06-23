@@ -1,9 +1,9 @@
 <?php
     namespace app\user;  
+    use getInstance as instance;
     class usuario{
-        function __construct(){
-            echo "NOMBRE " .__CLASS__;
-        }
+        use instance;
+        function __construct(public $nombre, protected $edad ){}
     }
 
 
